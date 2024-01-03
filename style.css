@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,500&family=Lexend+Tera:wght@100&family=Poppins:ital,wght@0,500;1,600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background:linear-gradient(yellow,rgb(255, 183, 0)); */
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-image: url("https://roselalune.com/cdn/shop/articles/Ramadan-2024.png?v=1695304561");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin: 2rem 0px;
+}
+
+.countdown {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.time {
+    text-align: center;
+    font-size: 20px;
+}
+
+.text {
+    font-size: 24px;
+    color: rgb(200, 205, 50);
+}
