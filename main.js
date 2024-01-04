@@ -1,3 +1,4 @@
+let months = document.querySelector("#months")
 let days = document.querySelector("#Days")
 let hours = document.querySelector("#Hours")
 let minutes = document.querySelector("#Minutes")
@@ -5,23 +6,24 @@ let second = document.querySelector("#Second")
 
 let currentYear = new Date().getFullYear();
 
-let timeRamadan = new Date ('March 10 2024 00:00:00');
+let timeRamadan = new Date('March 10 2024 00:00:00');
 function countdowntime() {
-    let currentTime= new Date();
-    let diff =timeRamadan.getTime()-currentTime.getTime() ;
-    let d= Math.floor(diff/1000/60/60/24)
-    let h= Math.floor(diff/1000/60/60) % 24;
-    let m= Math.floor(diff/1000/60) %60;
-    let s= Math.floor(diff/1000)%60;
+    let currentTime = new Date();
+    let diff = timeRamadan.getTime() - currentTime.getTime();
+    let M = Math.ceil(diff / (1000 * 60 * 60 * 24 * 30));
+    let d = Math.floor(diff / 1000 / 60 / 60 / 24)
+    let h = Math.floor(diff / 1000 / 60 / 60) % 24;
+    let m = Math.floor(diff / 1000 / 60) % 60;
+    let s = Math.floor(diff / 1000) % 60;
 
-
-    days.innerHTML=d;
-   hours.innerHTML=h;
-   minutes.innerHTML=m;
-    second.innerHTML=s;
+    months.innerHTML = M;
+    days.innerHTML = d;
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    second.innerHTML = s;
 }
 
-setInterval(countdowntime,1000);
+setInterval(countdowntime, 1000);
 
 
 
