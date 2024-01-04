@@ -13,9 +13,12 @@ body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-image: url("https://roselalune.com/cdn/shop/articles/Ramadan-2024.png?v=1695304561");
     background-size: cover;
+   background-position: center;
     background-repeat: no-repeat;
 
 }
+
+
 
 .container {
     display: flex;
